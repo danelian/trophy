@@ -1,7 +1,7 @@
 /*-----title----*/
 .page-title {
 	margin-top: 0;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	font-size: 64px;
 	font-weight: 600;
 	line-height: 1.2;
@@ -37,6 +37,7 @@
 @include mobile {
 	.page-title {
 		font-size: 28px;
+		margin-bottom: 20px;
 	}
 	.section-title {
 		margin-bottom: 16px;
