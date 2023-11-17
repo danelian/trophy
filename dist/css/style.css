@@ -891,4 +891,46 @@ th {
   }
 }
 /***** COMPONENTS GLOBAL *****/
+/*----header-----*/
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 36px 0;
+  width: 100%;
+  z-index: 500;
+}
+.header .logo {
+  flex-shrink: 0;
+  width: 280px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding: 16px 0;
+  }
+  .header .logo {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 12px 0;
+  }
+  .header .logo {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .logo {
+    width: 130px;
+  }
+}
 /***** SECTIONS GLOBAL (Widgets) *****/
