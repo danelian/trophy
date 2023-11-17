@@ -24,6 +24,21 @@ body {
 	padding: 0 var(--container-offset);
 	max-width: var(--container-width);
 }
+@include desktop {
+	body {
+		font-size: 18px;
+	}
+}
+@include tablet {
+	body {
+		font-size: 17px;
+	}
+}
+@include mobile {
+	body {
+		font-size: 16px;
+	}
+}
 .link-center {
 	display: flex;
 	align-items: center;
