@@ -1,0 +1,27 @@
+.species-category {
+  .page-title {
+    margin-bottom: 24px;
+  }
+  .kama_breadcrumbs {
+    margin-bottom: 52px;
+  }
+}
+
+@include tablet {
+  .species-category {
+    .page-title {
+      margin-bottom: 20px;
+    }
+    .kama_breadcrumbs {
+      margin-bottom: 36px;
+    }
+  }
+}
+
+@include mobile {
+  .species-category {
+    .kama_breadcrumbs {
+      margin-bottom: 24px;
+    }
+  }
+}

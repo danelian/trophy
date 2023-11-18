@@ -1,64 +1,87 @@
 /*-----breadcrumbs-----*/
-.kama_breadcrumbs,
-.woocommerce-breadcrumb {
+.kama_breadcrumbs {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	row-gap: 4px;
-	padding: 10px 0;
-	margin-bottom: 36px;
-	font-size: 15px;
-	line-height: 18px;
-	color: #858585;
-	span {
-		line-height: 18px;
-	}
-	a {
-		position: relative;
-		line-height: 18px;
-		color: var(--font-color);
+	row-gap: 6px;
+	.kb_link,
+	.kb_title {
 		display: inline-flex;
 		align-items: center;
-		transition: color 0.3s ease-in;
-		&:hover {
-			color: var(--global-color);
-		}
+		justify-content: center;
+		padding: 12px 20px;
+		font-size: 17px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: center;
+		color: var(--font-color);
+		border-radius: 10px;
+		background-color: var(--grey-color);
+		transition: .3s ease;
+	}
+	.kb_link:hover {
+		color: var(--white-color);
+		background-color: var(--global-color);
 	}
 	.kb_sep {
 		display: inline-flex;
 		vertical-align: middle;
-		i {
-			transform: rotate(-90deg);
-			font-size: 24px;
-			line-height: 24px !important;
-			margin: 0 5px;
-			color: var(--global-color);
+		position: relative;
+		margin: auto 14px;
+		width: 28px;
+		height: 28px;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 28px;
+			height: 28px;
+			background-image: url('../img/icons/arrow-right.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
 		}
 	}
 }
 
 @include tablet {
-/*-----breadcrumbs-----*/
-.kama_breadcrumbs,
-.woocommerce-breadcrumb {
-	row-gap: 2px;
-	padding: 2px 0;
-	margin-bottom: 20px;
-	font-size: 12px;
-	line-height: 14px;
-	span {
-		line-height: 14px;
-	}
-	a {
-		line-height: 14px;
-	}
-	.kb_sep {
-		i {
-			font-size: 14px;
-			line-height: 14px !important;
-			margin: 0 2px;
+	.kama_breadcrumbs {
+		.kb_link,
+		.kb_title {
+			padding: 10px 12px;
+			font-size: 13px;
+			line-height: 14px;
+		}
+		.kb_sep {
+			margin: auto 6px;
+			width: 16px;
+			height: 16px;
+			&::after {
+				width: 16px;
+				height: 16px;
+			}
 		}
 	}
 }
+
+@include mobile {
+	.kama_breadcrumbs {
+		.kb_link,
+		.kb_title {
+			padding: 6px 8px;
+			font-size: 12px;
+			line-height: 12px;
+			border-radius: 6px;
+		}
+		.kb_sep {
+			width: 14px;
+			height: 14px;
+			&::after {
+				width: 14px;
+				height: 14px;
+			}
+		}
+	}
 }
