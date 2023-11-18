@@ -13,8 +13,8 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	padding: 26px 44px;
-	min-height: 78px;
+	padding: 20px 44px;
+	min-height: 66px;
 	text-align: center;
 	color: var(--white-color);
 	font-size: 22px;
@@ -34,5 +34,14 @@
 	&.disabled {
 		opacity: 0.5;
 		cursor: auto;
+	}
+}
+
+@include tablet {
+	.button {
+		padding: 12px 44px;
+		min-height: 50px;
+		font-size: 18px;
+		line-height: 18px;
 	}
 }
