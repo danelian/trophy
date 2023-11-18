@@ -1505,3 +1505,43 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 16px;
   }
 }
+.read-also {
+  padding-top: 40px;
+  padding-bottom: 90px;
+}
+.read-also__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--forn-color);
+}
+
+@media screen and (max-width: 1366px) {
+  .read-also .blog__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .read-also {
+    padding-bottom: 60px;
+  }
+  .read-also__title {
+    margin-bottom: 32px;
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .read-also {
+    padding-bottom: 40px;
+  }
+  .read-also__title {
+    margin-bottom: 24px;
+    font-size: 22px;
+  }
+  .read-also .blog__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
