@@ -1,6 +1,9 @@
 .article {
   padding-top: 60px;
   padding-bottom: 70px;
+  .kama_breadcrumbs {
+    margin-bottom: 24px;
+  }
   .page-title {
     margin-bottom: 36px;
   }
@@ -100,6 +103,53 @@
   }
 }
 
+.copyright {
+  margin-top: 36px !important;
+  margin-bottom: 0 !important;
+}
+
+.species-article {
+  &__block {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  &__image {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 32px;
+    border-radius: 10px;
+    border: 1px solid rgba(26, 55, 95, 0.30);
+    img {
+      width: 100%;
+    }
+  }
+  &__areal {
+    flex: 0 1 40%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 32px 32px 36px;
+    border-radius: 10px;
+    border: 1px solid rgba(26, 55, 95, 0.30);
+    h3 {
+      margin-top: 0 !important;
+      margin-bottom: 20px;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      color: var(--font-color);
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @include desktop {
   .article {
     padding-top: 50px;
@@ -137,9 +187,28 @@
       font-size: 18px;
     }
   }
+  .species-article {
+    &__block {
+      margin-bottom: 32px;
+    }
+    &__image {
+      padding: 16px 20px;
+    }
+    &__areal {
+      margin-left: 20px;
+      padding: 20px 20px 20px 20px;
+      h3 {
+        margin-bottom: 12px !important;
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 @include tablet {
+  .copyright {
+    margin-top: 24px !important;
+  }
   .article {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -169,6 +238,21 @@
     }
     blockquote p {
       font-size: 17px;
+    }
+  }
+  .species-article {
+    &__block {
+      margin-bottom: 24px;
+    }
+    &__image {
+      padding: 12px;
+    }
+    &__areal {
+      margin-left: 12px;
+      padding: 16px;
+      h3 {
+        font-size: 14px !important;
+      }
     }
   }
 }
@@ -206,6 +290,20 @@
     }
     blockquote p {
       font-size: 16px;
+    }
+  }
+  .species-article {
+    &__block {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__image {
+      padding: 8px;
+    }
+    &__areal {
+      margin-left: 0;
+      margin-top: 12px;
+      padding: 16px;
     }
   }
 }

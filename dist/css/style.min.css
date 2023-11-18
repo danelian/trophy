@@ -1512,6 +1512,9 @@ input[type=number]::-webkit-inner-spin-button {
   padding-top: 60px;
   padding-bottom: 70px;
 }
+.article .kama_breadcrumbs {
+  margin-bottom: 24px;
+}
 .article .page-title {
   margin-bottom: 36px;
 }
@@ -1602,6 +1605,51 @@ input[type=number]::-webkit-inner-spin-button {
   margin-bottom: 12px;
 }
 
+.copyright {
+  margin-top: 36px !important;
+  margin-bottom: 0 !important;
+}
+
+.species-article__block {
+  display: flex;
+  margin-bottom: 40px;
+}
+.species-article__image {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 32px;
+  border-radius: 10px;
+  border: 1px solid rgba(26, 55, 95, 0.3);
+}
+.species-article__image img {
+  width: 100%;
+}
+.species-article__areal {
+  flex: 0 1 40%;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 32px 32px 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(26, 55, 95, 0.3);
+}
+.species-article__areal h3 {
+  margin-top: 0 !important;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: var(--font-color);
+}
+.species-article__areal img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1440px) {
   .article {
     padding-top: 50px;
@@ -1639,8 +1687,25 @@ input[type=number]::-webkit-inner-spin-button {
   .article blockquote p {
     font-size: 18px;
   }
+  .species-article__block {
+    margin-bottom: 32px;
+  }
+  .species-article__image {
+    padding: 16px 20px;
+  }
+  .species-article__areal {
+    margin-left: 20px;
+    padding: 20px 20px 20px 20px;
+  }
+  .species-article__areal h3 {
+    margin-bottom: 12px !important;
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .copyright {
+    margin-top: 24px !important;
+  }
   .article {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -1671,6 +1736,19 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .article blockquote p {
     font-size: 17px;
+  }
+  .species-article__block {
+    margin-bottom: 24px;
+  }
+  .species-article__image {
+    padding: 12px;
+  }
+  .species-article__areal {
+    margin-left: 12px;
+    padding: 16px;
+  }
+  .species-article__areal h3 {
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1705,6 +1783,18 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .article blockquote p {
     font-size: 16px;
+  }
+  .species-article__block {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .species-article__image {
+    padding: 8px;
+  }
+  .species-article__areal {
+    margin-left: 0;
+    margin-top: 12px;
+    padding: 16px;
   }
 }
 .read-also {
